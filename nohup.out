@@ -1,0 +1,99 @@
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+info: socket.io started
+loading plugin ./plugins/patternMatcher on monitor
+loading plugin ./plugins/httpOptions on monitor
+Monitor origin started
+(node:9142) DeprecationWarning: process.EventEmitter is deprecated. Use require('events') instead.
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[0;36mMongoose:[0m pings.ensureIndex({ timestamp: [33m-1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m }  
+[0;36mMongoose:[0m checkevents.ensureIndex({ timestamp: [33m-1[39m, check: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m }  
+[0;36mMongoose:[0m checkhourlystats.ensureIndex({ timestamp: [33m-1[39m, check: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m checkdailystats.ensureIndex({ timestamp: [33m-1[39m, check: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m checkmonthlystats.ensureIndex({ timestamp: [33m-1[39m, check: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m checkyearlystats.ensureIndex({ timestamp: [33m-1[39m, check: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m taghourlystats.ensureIndex({ timestamp: [33m-1[39m, name: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m tagdailystats.ensureIndex({ timestamp: [33m-1[39m, name: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m tagmonthlystats.ensureIndex({ timestamp: [33m-1[39m, name: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m tagyearlystats.ensureIndex({ timestamp: [33m-1[39m, name: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m tags.ensureIndex({ name: [33m1[39m }) { safe: [90mundefined[39m, background: [33mtrue[39m, unique: [33mtrue[39m }  
+[0;36mMongoose:[0m checks.find({ [32m'$where'[39m: [32m'function () {\n if (this.isPaused) return false;\n if (!this.firstTested) return true;\n var delay = (this.lastTested.getTime() - this.firstTested.getTime()) % this.interval;\n return (Date.now() - this.lastTested.getTime() + delay) >= (this.interval || 60000);\n}'[39m }) { fields: { qos: [33m0[39m }, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { lastTested: new Date("Tue, 27 Nov 2018 22:09:50 GMT") } } { safe: [90mundefined[39m } 
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m pings.insert({ __v: [33m0[39m, timestamp: new Date("Tue, 27 Nov 2018 22:09:50 GMT"), tags: [], _id: ObjectId("5bfdc0aea4cf34b623000001"), isUp: [33mfalse[39m, isResponsive: [33mfalse[39m, time: [33m19[39m, check: ObjectId("5bfdbcf7a5c4121821000002"), monitorName: [32m'origin'[39m, downtime: [33m3000[39m, error: [32m'getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80'[39m }) {}  
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { downtime: [33m948934[39m, lastTested: new Date("Tue, 27 Nov 2018 22:09:50 GMT") } } {} 
+[36m11:09:50 PM[0m fafasfas [31mresponded with error "getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80"[0m
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized wBIUBGJvGnhPsN9vOKcd
+[0;36mMongoose:[0m checkevents.find({ timestamp: { [32m'$gte'[39m: new Date("Tue, 20 Nov 2018 22:09:55 GMT") } }) { fields: { tags: [33m0[39m }, safe: [90mundefined[39m, limit: [33m100[39m, sort: [ [ [32m'timestamp'[39m, [33m-1[39m ] ] }  
+[0;36mMongoose:[0m checks.find({ _id: { [32m'$in'[39m: [ ObjectId("5bfdbcf7a5c4121821000002") ] } }) { fields: { url: [33m1[39m, name: [33m1[39m, _id: [33m1[39m }, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.find({}) { fields: { isPaused: [33m1[39m, isUp: [33m1[39m }, safe: [90mundefined[39m }  
+debug: setting request GET /socket.io/1/websocket/wBIUBGJvGnhPsN9vOKcd
+debug: set heartbeat interval for client wBIUBGJvGnhPsN9vOKcd
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (undefined)
+debug: set close timeout for client wBIUBGJvGnhPsN9vOKcd
+debug: cleared close timeout for client wBIUBGJvGnhPsN9vOKcd
+debug: cleared heartbeat interval for client wBIUBGJvGnhPsN9vOKcd
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized wY2iqXOKZazuDQ7YOKce
+[0;36mMongoose:[0m checkevents.find({ timestamp: { [32m'$gte'[39m: new Date("Tue, 20 Nov 2018 22:09:58 GMT") } }) { fields: { tags: [33m0[39m }, safe: [90mundefined[39m, limit: [33m100[39m, sort: [ [ [32m'timestamp'[39m, [33m-1[39m ] ] }  
+[0;36mMongoose:[0m checks.find({ _id: { [32m'$in'[39m: [ ObjectId("5bfdbcf7a5c4121821000002") ] } }) { fields: { url: [33m1[39m, name: [33m1[39m, _id: [33m1[39m }, safe: [90mundefined[39m }  
+debug: setting request GET /socket.io/1/websocket/wY2iqXOKZazuDQ7YOKce
+debug: set heartbeat interval for client wY2iqXOKZazuDQ7YOKce
+debug: client authorized for 
+debug: websocket writing 1::
+[0;36mMongoose:[0m checks.find({}) { fields: [90mundefined[39m, safe: [90mundefined[39m, sort: [ [ [32m'isUp'[39m, [33m1[39m ], [ [32m'lastChanged'[39m, [33m-1[39m ] ] }  
+info: transport end (undefined)
+debug: set close timeout for client wY2iqXOKZazuDQ7YOKce
+debug: cleared close timeout for client wY2iqXOKZazuDQ7YOKce
+debug: cleared heartbeat interval for client wY2iqXOKZazuDQ7YOKce
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized E1XbEkMtNpGISYTAOKcf
+debug: setting request GET /socket.io/1/websocket/E1XbEkMtNpGISYTAOKcf
+debug: set heartbeat interval for client E1XbEkMtNpGISYTAOKcf
+debug: client authorized for 
+debug: websocket writing 1::
+[0;36mMongoose:[0m checks.find({ [32m'$where'[39m: [32m'function () {\n if (this.isPaused) return false;\n if (!this.firstTested) return true;\n var delay = (this.lastTested.getTime() - this.firstTested.getTime()) % this.interval;\n return (Date.now() - this.lastTested.getTime() + delay) >= (this.interval || 60000);\n}'[39m }) { fields: { qos: [33m0[39m }, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { lastTested: new Date("Tue, 27 Nov 2018 22:09:59 GMT") } } { safe: [90mundefined[39m } 
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m pings.insert({ __v: [33m0[39m, timestamp: new Date("Tue, 27 Nov 2018 22:09:59 GMT"), tags: [], _id: ObjectId("5bfdc0b7a4cf34b623000002"), isUp: [33mfalse[39m, isResponsive: [33mfalse[39m, time: [33m5[39m, check: ObjectId("5bfdbcf7a5c4121821000002"), monitorName: [32m'origin'[39m, downtime: [33m3000[39m, error: [32m'getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80'[39m }) {}  
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { downtime: [33m958800[39m, lastTested: new Date("Tue, 27 Nov 2018 22:09:59 GMT") } } {} 
+[36m11:09:59 PM[0m fafasfas [31mresponded with error "getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80"[0m
+info: transport end (undefined)
+debug: set close timeout for client E1XbEkMtNpGISYTAOKcf
+debug: cleared close timeout for client E1XbEkMtNpGISYTAOKcf
+debug: cleared heartbeat interval for client E1XbEkMtNpGISYTAOKcf
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized 433SYMWpppnPyL4yOKcg
+[0;36mMongoose:[0m checkevents.find({ timestamp: { [32m'$gte'[39m: new Date("Tue, 20 Nov 2018 22:10:00 GMT") } }) { fields: { tags: [33m0[39m }, safe: [90mundefined[39m, limit: [33m100[39m, sort: [ [ [32m'timestamp'[39m, [33m-1[39m ] ] }  
+[0;36mMongoose:[0m checks.find({ _id: { [32m'$in'[39m: [ ObjectId("5bfdbcf7a5c4121821000002") ] } }) { fields: { url: [33m1[39m, name: [33m1[39m, _id: [33m1[39m }, safe: [90mundefined[39m }  
+debug: setting request GET /socket.io/1/websocket/433SYMWpppnPyL4yOKcg
+debug: set heartbeat interval for client 433SYMWpppnPyL4yOKcg
+debug: client authorized for 
+debug: websocket writing 1::
+[0;36mMongoose:[0m checks.find({ [32m'$where'[39m: [32m'function () {\n if (this.isPaused) return false;\n if (!this.firstTested) return true;\n var delay = (this.lastTested.getTime() - this.firstTested.getTime()) % this.interval;\n return (Date.now() - this.lastTested.getTime() + delay) >= (this.interval || 60000);\n}'[39m }) { fields: { qos: [33m0[39m }, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { lastTested: new Date("Tue, 27 Nov 2018 22:10:09 GMT") } } { safe: [90mundefined[39m } 
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m pings.insert({ __v: [33m0[39m, timestamp: new Date("Tue, 27 Nov 2018 22:10:09 GMT"), tags: [], _id: ObjectId("5bfdc0c1a4cf34b623000003"), isUp: [33mfalse[39m, isResponsive: [33mfalse[39m, time: [33m10[39m, check: ObjectId("5bfdbcf7a5c4121821000002"), monitorName: [32m'origin'[39m, downtime: [33m3000[39m, error: [32m'getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80'[39m }) {}  
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { downtime: [33m968807[39m, lastTested: new Date("Tue, 27 Nov 2018 22:10:09 GMT") } } {} 
+[36m11:10:09 PM[0m fafasfas [31mresponded with error "getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80"[0m
+[0;36mMongoose:[0m checks.find({ [32m'$where'[39m: [32m'function () {\n if (this.isPaused) return false;\n if (!this.firstTested) return true;\n var delay = (this.lastTested.getTime() - this.firstTested.getTime()) % this.interval;\n return (Date.now() - this.lastTested.getTime() + delay) >= (this.interval || 60000);\n}'[39m }) { fields: { qos: [33m0[39m }, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m pings.insert({ __v: [33m0[39m, timestamp: new Date("Tue, 27 Nov 2018 22:10:19 GMT"), tags: [], _id: ObjectId("5bfdc0cba4cf34b623000004"), isUp: [33mfalse[39m, isResponsive: [33mfalse[39m, time: [33m2[39m, check: ObjectId("5bfdbcf7a5c4121821000002"), monitorName: [32m'origin'[39m, downtime: [33m3000[39m, error: [32m'getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80'[39m }) {}  
+[0;36mMongoose:[0m checks.findOne({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { fields: [90mundefined[39m, safe: [90mundefined[39m }  
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { downtime: [33m978818[39m, lastTested: new Date("Tue, 27 Nov 2018 22:10:19 GMT") } } {} 
+[36m11:10:19 PM[0m fafasfas [31mresponded with error "getaddrinfo ENOTFOUND testatawafsasf.com testatawafsasf.com:80"[0m
+[0;36mMongoose:[0m checks.update({ _id: ObjectId("5bfdbcf7a5c4121821000002") }) { [32m'$set'[39m: { lastTested: new Date("Tue, 27 Nov 2018 22:10:19 GMT") } } { safe: [90mundefined[39m } 

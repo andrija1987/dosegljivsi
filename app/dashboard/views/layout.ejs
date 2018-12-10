@@ -26,20 +26,20 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container container-mobile">
+    <div class="container container-mobile" style="font-size:16px !important;">
       <div class="navbar navbar-inverse">
         <div class="navbar-inner">
             <a class="brand" href="<%= route %>/events">dosegljiv.si</a>
             <ul class="nav pull-left">
-              <li><a style="font-size:13px;" href="<%= route %>/events">Events</a></li>
-              <li><a style="font-size:13px;" href="<%= route %>/checks">Checks</a></li>
-              <li><a style="font-size:13px;" href="<%= route %>/tags">Tags</a></li>
-              <li><a style="font-size:13px;" href="/api">API</a></li>
+              <li><a style="font-size:14px;" href="<%= route %>/events">Events</a></li>
+              <li><a style="font-size:14px;" href="<%= route %>/checks">Checks</a></li>
+              <li><a style="font-size:14px;" href="<%= route %>/tags">Tags</a></li>
+              <li><a style="font-size:14px;" href="/api">API</a></li>
               <li id="new_events"><a href="<%= route %>/events?highlightFrom=<%= Date.now() %>"></a></li> 
             </ul>
             <ul class="nav pull-right" id="check_summary">
-              <li id="all_up" style="display:none;"><span class="label label-success">UP</span><strong class="green">0</strong></li>
-              <li id="all_down" style="display: none;"><span class="label label-important">DOWN</span><strong class="red">0</strong></li>
+              <li id="all_up" style="display:none;font-size:14px;"><span class="label label-success">UP</span><strong class="green">0</strong></li>
+              <li id="all_down" style="display: none;font-size:14px;"><span class="label label-important">DOWN</span><strong class="red">0</strong></li>
             </ul>
         </div></div>
         

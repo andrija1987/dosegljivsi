@@ -1,0 +1,132 @@
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+loading plugin ./plugins/email on app
+Enabled Email notifications
+loading plugin ./plugins/basicAuth on app
+info: socket.io started
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[36m8:34:52 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:34:52 AM[0m Contabo server [32mOK[0m
+[36m8:34:52 AM[0m google [32mOK[0m
+[36m8:34:53 AM[0m zelenisvet.com [32mOK[0m
+[36m8:35:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:35:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:35:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:35:52 AM[0m Contabo server [32mOK[0m
+[36m8:36:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:36:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:36:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:36:52 AM[0m Contabo server [32mOK[0m
+[36m8:37:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:37:32 AM[0m google [32mOK[0m
+[36m8:37:43 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:38:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:38:32 AM[0m google [32mOK[0m
+[36m8:38:43 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:39:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:39:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:39:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:39:52 AM[0m Contabo server [32mOK[0m
+[36m8:40:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:40:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:40:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:40:52 AM[0m Contabo server [32mOK[0m
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+loading plugin ./plugins/email on app
+Enabled Email notifications
+loading plugin ./plugins/basicAuth on app
+info: socket.io started
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[36m8:41:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:41:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:41:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:41:52 AM[0m Contabo server [32mOK[0m
+[36m8:42:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:42:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:42:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:42:52 AM[0m Contabo server [32mOK[0m
+[36m8:43:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:43:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:43:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:43:52 AM[0m Contabo server [32mOK[0m
+[36m8:44:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:44:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:44:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:44:52 AM[0m Contabo server [32mOK[0m
+[36m8:45:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:45:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:45:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:45:52 AM[0m Contabo server [32mOK[0m
+[36m8:46:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:46:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:46:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:46:52 AM[0m Contabo server [32mOK[0m
+[36m8:47:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:47:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:47:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:47:52 AM[0m Contabo server [32mOK[0m
+[36m8:48:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:48:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:48:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:48:52 AM[0m Contabo server [32mOK[0m
+[36m8:49:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:49:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:49:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:49:52 AM[0m Contabo server [32mOK[0m
+[36m8:50:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:50:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:50:37 AM[0m trgovina.zelenisvet.com [31mresponded with error "Request Timeout"[0m
+[36m8:50:37 AM[0m [31m[1mtrgovina.zelenisvet.com went down Request Timeout[0m
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+loading plugin ./plugins/email on app
+Enabled Email notifications
+loading plugin ./plugins/basicAuth on app
+info: socket.io started
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[36m8:50:52 AM[0m Contabo server [32mOK[0m
+[36m8:51:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:51:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:51:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:51:32 AM[0m [32m[1mtrgovina.zelenisvet.com is now up[0m
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+loading plugin ./plugins/email on app
+Enabled Email notifications
+loading plugin ./plugins/basicAuth on app
+info: socket.io started
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[36m8:51:52 AM[0m Contabo server [32mOK[0m
+[36m8:52:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:52:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:52:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:52:52 AM[0m Contabo server [32mOK[0m
+[36m8:53:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:53:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:53:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:53:52 AM[0m Contabo server [32mOK[0m
+[36m8:54:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:54:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:54:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:54:52 AM[0m Contabo server [32mOK[0m
+[36m8:55:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:55:32 AM[0m google [32mOK[0m
+[36m8:55:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:56:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:56:32 AM[0m google [32mOK[0m
+[36m8:56:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:57:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:57:32 AM[0m google [32mOK[0m
+[36m8:57:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:58:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:58:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:58:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:58:52 AM[0m Contabo server [32mOK[0m
+[36m8:59:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:59:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:59:32 AM[0m trgovina.zelenisvet.com [32mOK[0m

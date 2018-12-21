@@ -40,7 +40,7 @@ module.exports = function(app) {
   // check route middleware
   var loadCheck = function(req, res, next) {
   	let req_id = null;
-  	if(req.query.id){
+  	if(Object.keys(req.query).length > 0){
   		req_id = req.query.id
   	} else {
   		req_id = req.params.id

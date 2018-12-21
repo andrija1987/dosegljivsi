@@ -1,0 +1,11 @@
+Error: http://dosegljiv.si:8082/api/checks/needingPoll resource not available: connect ECONNREFUSED 165.227.169.6:8082
+    at ClientRequest.<anonymous> (/home/dosegljiv/lib/monitor.js:102:14)
+    at emitOne (events.js:96:13)
+    at ClientRequest.emit (events.js:188:7)
+    at Socket.socketErrorListener (_http_client.js:314:9)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1290:8)
+    at args.(anonymous function) (/usr/lib/node_modules/pm2/node_modules/event-loop-inspector/index.js:138:29)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)

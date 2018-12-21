@@ -1,0 +1,99 @@
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+loading plugin ./plugins/email on app
+Enabled Email notifications
+loading plugin ./plugins/basicAuth on app
+info: socket.io started
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[36m8:34:52 AM[0m andrija1987.si [32mOK[0m
+[36m8:34:52 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:34:55 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:35:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:35:32 AM[0m google [32mOK[0m
+[36m8:35:44 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:36:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:36:32 AM[0m google [32mOK[0m
+[36m8:36:44 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:37:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:37:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:37:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:37:52 AM[0m Contabo server [32mOK[0m
+[36m8:38:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:38:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:38:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:38:52 AM[0m Contabo server [32mOK[0m
+[36m8:39:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:39:32 AM[0m google [32mOK[0m
+[36m8:39:43 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:40:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:40:32 AM[0m google [32mOK[0m
+[36m8:40:43 AM[0m kreativni-direktor.com [32mOK[0m
+loading plugin ./plugins/console on app
+loading plugin ./plugins/patternMatcher on app
+loading plugin ./plugins/httpOptions on app
+loading plugin ./plugins/email on app
+Enabled Email notifications
+loading plugin ./plugins/basicAuth on app
+info: socket.io started
+Express server listening on host dosegljiv.si, port 8082 in development mode
+[36m8:41:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:41:32 AM[0m google [32mOK[0m
+[36m8:41:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:42:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:42:32 AM[0m google [32mOK[0m
+[36m8:42:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:43:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:43:32 AM[0m google [32mOK[0m
+[36m8:43:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:44:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:44:32 AM[0m google [32mOK[0m
+[36m8:44:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:45:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:45:32 AM[0m google [32mOK[0m
+[36m8:45:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:46:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:46:32 AM[0m google [32mOK[0m
+[36m8:46:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:47:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:47:32 AM[0m google [32mOK[0m
+[36m8:47:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:48:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:48:32 AM[0m google [32mOK[0m
+[36m8:48:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:49:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:49:32 AM[0m google [32mOK[0m
+[36m8:49:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:50:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:50:32 AM[0m google [32mOK[0m
+[36m8:50:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:51:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:51:32 AM[0m google [32mOK[0m
+[36m8:51:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:52:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:52:32 AM[0m google [32mOK[0m
+[36m8:52:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:53:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:53:32 AM[0m google [32mOK[0m
+[36m8:53:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:54:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:54:32 AM[0m google [32mOK[0m
+[36m8:54:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:55:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:55:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:55:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:55:53 AM[0m Contabo server [32mOK[0m
+[36m8:56:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:56:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:56:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:56:53 AM[0m Contabo server [32mOK[0m
+[36m8:57:23 AM[0m zelenisvet.com [32mOK[0m
+[36m8:57:32 AM[0m andrija1987.si [32mOK[0m
+[36m8:57:32 AM[0m trgovina.zelenisvet.com [32mOK[0m
+[36m8:57:53 AM[0m Contabo server [32mOK[0m
+[36m8:58:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:58:32 AM[0m google [32mOK[0m
+[36m8:58:42 AM[0m kreativni-direktor.com [32mOK[0m
+[36m8:59:25 AM[0m rpi [31mresponded with error "connect EHOSTUNREACH 31.15.143.10:80"[0m
+[36m8:59:32 AM[0m google [32mOK[0m
+[36m8:59:42 AM[0m kreativni-direktor.com [32mOK[0m

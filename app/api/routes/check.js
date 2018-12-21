@@ -39,12 +39,18 @@ module.exports = function(app) {
 
   // check route middleware
   var loadCheck = function(req, res, next) {
+  	let req_id = null;
+  	if(req.query.id){
+  		req_id = req.query.id
+  	} else {
+  		req_id = req.params.id
+  	}
     Check
-    .find({ _id: req.params.id })
+    .find({ _id: req_id })
     .select({qos: 0})
     .findOne(function(err, check) {
       if (err) return next(err);
-      if (!check) return res.json(404, { error: 'failed to load check ' + req.params.id });
+      if (!check) return res.json(404, { error: 'failed to load check ' + req_id });
       req.check = check;
       next();
     });
@@ -53,6 +59,10 @@ module.exports = function(app) {
   app.get('/checks/:id', loadCheck, function(req, res, next) {
     res.json(req.check);
   });
+
+  app.get('/checks', loadCheck, function(rea, res, next){
+  	res.json(req.check);
+  })
   
   app.get('/checks/:id/pause', loadCheck, function(req, res, next) {
     req.check.togglePause();

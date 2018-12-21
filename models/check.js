@@ -2,7 +2,6 @@ var mongoose = require('mongoose');
 var Schema   = mongoose.Schema;
 var moment   = require('moment');
 var async    = require('async');
-
 // models dependencies
 var Ping             = require('../models/ping');
 var CheckEvent       = require('../models/checkEvent');

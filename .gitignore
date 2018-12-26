@@ -5,4 +5,5 @@ plugins/index.js
 node_modules
 npm-debug.log
 create-user-mongodb
+logs
 *.swp

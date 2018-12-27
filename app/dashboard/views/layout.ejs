@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>dosegljiv.si</title>
     <link rel="stylesheet" href="<%= route %>/stylesheets/bootstrap.css">
     <link rel="stylesheet" href="<%= route %>/stylesheets/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="<%= route %>/stylesheets/style.css">
     <link rel="shortcut icon" href="<%= route %>/favicon.ico">
     <link rel="apple-touch-icon" href="<%= route %>/apple-touch-icon.png">
@@ -15,7 +16,7 @@
     <script src="<%= route %>/javascripts/jquery.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-    var socket = io.connect(location.protocol + '//' + location.hostname);
+        var socket = io.connect(location.protocol + '//' + location.hostname);
     </script>
     <script src="<%= route %>/javascripts/moment.min.js"></script>
     <!--[if lt IE 9]>
@@ -24,95 +25,107 @@
     <script src="http://raw.github.com/kriskowal/es5-shim/master/es5-sham.js"></script>
     <script type="text/javascript" src="path/to/flashcanvas.js"></script>
     <![endif]-->
-      </head>
-  <body>
-    <div class="container container-mobile" style="font-size:16px !important;">
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-            <a class="brand" href="<%= route %>/events"><img src="<%= route %>/images/computer.png"></a>
-            <ul class="nav pull-left">
-              <li><a class="li-font-size" href="<%= route %>/events">Events</a></li>
-              <li><a class="li-font-size" href="<%= route %>/checks">Checks</a></li>
-              <li><a class="li-font-size" href="<%= route %>/tags">Tags</a></li>
-              <li><a class="li-font-size" href="/api">API</a></li>
-              <li id="new_events"><a href="<%= route %>/events?highlightFrom=<%= Date.now() %>"></a></ul>          
-              <ul class="nav pull-right" id="check_summary">
-              <li><img src="<%= route %>/images/arrow-up.png"></li>
-              <li id="all_up" style="display:none;font-size:14px;"><span class="label label-success">UP</span><strong class="green">0</strong></li>
-              <li id="all_down" style="display: none;font-size:14px;"><span class="label label-important">DOWN</span><strong class="red">0</strong></li>
-              <li><img src="<%= route %>/images/arrow-down.png"></li>
-            </ul>
-        </div></div>
+</head>
+
+<body> 
+    <div class="container container-mobile">
+       <div class="navbar navbar-inverse">
+            <div class="navbar-inner"> 
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>                           
+            <ul class="nav pull-right">
+                    <li><a class="li-font-size" href="<%= route %>/events">Events</a></li>
+                    <li><a class="li-font-size" href="<%= route %>/checks">Checks</a></li>
+                    <li><a class="li-font-size" href="<%= route %>/tags">Tags</a></li>
+                    <li><a class="li-font-size" href="/api">API</a></li>
+                    <li id="new_events"><a href="<%= route %>/events?highlightFrom=<%= Date.now() %>"></a>
+                </ul>
+                <ul class="nav pull-left" id="check_summary" style="margin-top:5px;">
+                    <li><img src="<%= route %>/images/arrow-up.png"></li>
+                    <li id="all_up" class="updown"><span class="label label-success">UP</span><strong class="green">0</strong></li>
+                    <li id="all_down" class="updown"><span class="label label-important">DOWN</span><strong class="red">0</strong></li>
+                    <li><img src="<%= route %>/images/arrow-down.png"></li>
+                </ul>
+            </div>
+        </div>
+       <div> </div> 
+          
         <div class="button-con">
-  <label for='cb1'>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
-      <g id="Sun">
-        <g>
-          <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
-        </g>
-      </g>
-    </svg>
-  </label>
-  <input class='toggle' id='cb1' type='checkbox'>
-  <label class='toggle-button' for='cb1'></label>
-  <label for='cb1'>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-      <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
-    </svg>
-  </label>
-</div>
-	
+            <label for='cb1'>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+                    <g id="Sun">
+                        <g>
+                            <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+                        </g>
+                    </g>
+                </svg>
+            </label>
+            <input class='toggle' id='cb1' type='checkbox'>
+            <label class='toggle-button' for='cb1'></label>
+            <label for='cb1'>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                    <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+                </svg>
+            </label>
+        </div>
 
-      <section>
-      
+
+        <section>
+
             <%- body %>
-      </section>
-      
-      <footer class="footer">
-      </footer>
-    <!--</div> -->    <script>
-    var nbNewEvents = 0;
-    var loadedAt = new Date();
-    $(document).ready(function() {
-      var changeFavicon = function(red) {
-        $('head link[rel="shortcut icon"]').remove()
-        $('head').append('<link rel="shortcut icon" type="image/x-icon" href="/dashboard/favicon' + (red ? '_red' : '') + '.ico">')
-      }
-      var updateCounts = function() {
-        $.getJSON('/api/checks/count', function(count) {
-          if (count.total > 0) {
-            $('#all_up').show().children('strong').text(count.up);
-          } else {
-            $('#all_up').hide();
-          }
-          if (count.down > 0) {
-            $('#all_down').show().children('strong').text(count.down);
-            changeFavicon(true);
-          } else {
-            $('#all_down').hide();
-            if (nbNewEvents > 0) {
-              changeFavicon(false);
-            }
-          }
-          if (nbNewEvents > 0) {
-            document.title = '(' + nbNewEvents +') Uptime';
-          };
-        });
-      };
-      socket.on('CheckEvent', function() {
-        nbNewEvents++;
-        updateCounts();
-        $('#check_summary').fadeOut().fadeIn().fadeOut().fadeIn();
-        $('#new_events a').html(nbNewEvents + ' new event' + (nbNewEvents > 1 ? 's' : '') + ' since ' + moment(loadedAt).format('LLL'));
-      });
-      updateCounts();
-    });
-    </script>
-    <script>
-    $('body').toggleClass('day-background');
+        </section>
 
-$('#cb1').on('click', function () { $('body').toggleClass('day-background'); });
-</script>
-    <script src="<%= route %>/javascripts/3djs-chartbar.js"></script>
-  </body>
+        <footer class="footer">
+        </footer>
+        <!--</div> -->
+        <script>
+            var nbNewEvents = 0;
+            var loadedAt = new Date();
+            $(document).ready(function() {
+                var changeFavicon = function(red) {
+                    $('head link[rel="shortcut icon"]').remove()
+                    $('head').append('<link rel="shortcut icon" type="image/x-icon" href="/dashboard/favicon' + (red ? '_red' : '') + '.ico">')
+                }
+                var updateCounts = function() {
+                    $.getJSON('/api/checks/count', function(count) {
+                        if (count.total > 0) {
+                            $('#all_up').show().children('strong').text(count.up);
+                        } else {
+                            $('#all_up').hide();
+                        }
+                        if (count.down > 0) {
+                            $('#all_down').show().children('strong').text(count.down);
+                            changeFavicon(true);
+                        } else {
+                            $('#all_down').hide();
+                            if (nbNewEvents > 0) {
+                                changeFavicon(false);
+                            }
+                        }
+                        if (nbNewEvents > 0) {
+                            document.title = '(' + nbNewEvents + ') Uptime';
+                        };
+                    });
+                };
+                socket.on('CheckEvent', function() {
+                    nbNewEvents++;
+                    updateCounts();
+                    $('#check_summary').fadeOut().fadeIn().fadeOut().fadeIn();
+                    $('#new_events a').html(nbNewEvents + ' new event' + (nbNewEvents > 1 ? 's' : '') + ' since ' + moment(loadedAt).format('LLL'));
+                });
+                updateCounts();
+            });
+        </script>
+        <script>
+            $('body').toggleClass('day-background');
+
+            $('#cb1').on('click', function() {
+                $('body').toggleClass('day-background');
+            });
+        </script>
+</body>
+
 </html>
